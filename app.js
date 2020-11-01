@@ -58,4 +58,4 @@ app.post('/',function(req,res){
 
 app.get('/',function(req,res){
 	res.render("index");
-}).listen(5000);
+}).listen(process.env.PORT || 5000);
